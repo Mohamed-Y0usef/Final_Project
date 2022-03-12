@@ -1,0 +1,141 @@
+
+img
+{
+    opacity: 0.6;
+    width: 1349px;
+    margin: -8px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+   /* background: linear-gradient(127deg, rgba(172, 11, 11, 0), rgba(192, 23, 23, 0) 70%);*/
+}
+.text 
+{
+    position: relative;
+    bottom: 130px;
+    text-align: center;
+    right: 250px;
+}
+h2
+{
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: 220px;
+    font-size: 35px;
+}
+.p1 
+{
+    margin-left: 500px;
+    margin-top: 1px;
+    font-size: 25px;
+}
+.p2
+{
+    margin-left: 500px;
+    margin-top: 1px;    
+    font-size: 25px;
+}
+ .p3
+{
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.button-div {
+    position:relative; 
+    left:1030px; 
+    bottom: -10px;
+    width: 350px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 7px
+}
+
+.signup-button {
+    width: 100px;
+    height: 40px;
+    margin-right: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e9ecf0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.login-button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1859c9;
+    cursor: pointer
+}
+
+.login-button:hover {
+    background-color: #003ca3db
+}
+
+.signup-button:hover {
+    background-color: #b6b8bbd1
+}
+
+/*
+ buttons 
+.buttons
+{
+    position: relative;
+    top: 200px;
+}
+
+.button1
+{
+    display: inline-block;
+
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 9px;
+    background-color: #e9ecf0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 1100px;
+    margin-top: 120px;
+}
+
+.button2
+{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1859c9;
+    cursor: pointer;
+    margin-left: 1210px;
+    margin-top: -100px;
+
+}
+
+.button2:hover {
+    background-color: #1859c9db
+}
+
+.button1:hover {
+    background-color: #e9ecf0d1
+}
+*/
+

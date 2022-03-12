@@ -1,0 +1,43 @@
+{% extends 'parts/navbar.html' %} 
+
+{% load static %}
+
+{% block content %} 
+
+{% include 'parts/background.html' %}
+
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/upload_.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head> 
+<body>
+  <br>
+  <br>
+  <h2>Upload Resume</h2> 
+  <h4>File Types Can Be Uploaded for a Resume: csv, pdf, excel, word (doc, docx), txt, rtf, image, azw.</h4>
+    <div class="wrapper">
+      <form action="#">
+        <input class="file-input" type="file" name="file" hidden>
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File to Upload</p>
+      </form>
+      <section class="progress-area"></section>
+      <section class="uploaded-area"></section>
+    </div>
+
+<div class="wrapper1">
+  <button class="slide_from_left button">Summarize</button>
+    
+  </div>
+
+    <script src="{% static 'js/script.js' %}"></script> 
+</body>
+</html>
+
+
+{% endblock content %}
