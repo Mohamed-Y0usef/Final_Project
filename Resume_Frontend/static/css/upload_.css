@@ -162,6 +162,9 @@ section .details span{
   right: 100%;
 }
 .wrapper1{
-    margin-left: 1100px;
+    margin-left: 1108px;
+  }
+  .button.slide_from_left 
+  {
     cursor: pointer;
   }
