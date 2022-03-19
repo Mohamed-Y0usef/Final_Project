@@ -2,5 +2,6 @@ from django.urls import path ,include
 from . import views
 
 urlpatterns = [
-    path('' , views.upload , name = 'hr')
+    path('' , views.upload , name = 'hr'),
+    path('searchjob/' , views.searchjob , name = 'searchjob')
 ]

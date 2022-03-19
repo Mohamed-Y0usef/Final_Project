@@ -13,7 +13,7 @@ fileInput.onchange = ({target})=>{
     let fileName = file.name;
     if(fileName.length >= 12){
       let splitName = fileName.split('.');
-      fileName = splitName[0].substring(0, 13) + "... ." + splitName[1];
+      fileName = splitName[0].substring(0, 12) + "... ." + splitName[1];
     }
     uploadFile(fileName);
   }

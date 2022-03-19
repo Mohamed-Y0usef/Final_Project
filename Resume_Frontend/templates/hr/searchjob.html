@@ -1,20 +1,19 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'css/upload.css' %}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head> 
-    <body>
-      <section class="header">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/new.css' %}"/>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+  </head>
+  <body>
+    <section class="header">
         <nav>
             <a href = ""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAByCAMAAAAWEDTnAAAAkFBMVEX////6DwD6AAD8gHz6Min8eHP7XVf+1tT/8fH/9PP+w8H8lJH+xsP/8/L/7Ov6IBX/+vn9trP9op/+4uD+5+b9sq/+1dP7SEH9mZX+zcr9vLn7TUb9rar7Ukz7Ylz8ioX9pqL8dG/7OTH7QTr8bGf8j4v6KyL8fHf+3dv6Gg37aGL8hYH7VlD6LSP7UUn9nZqTR3U2AAAPKklEQVR4nO2da1siPQ+ApcoiymE4CogriCKsuv7/f/dyGGaSNG3SzrLPvlzNN4V2ht5tmiZpe3UTJF+/ryTZbINqXD+LNSbhpBYkZi7X+GiCarw+/2+8SAkDV8vkGnsJ3N+QIGzmQ1Fj1k3g/oKEgRtoqrwPGXIJXKQEcfuhqrKTwP0FCQLX0tX5M4BcAhcpIdxulHVOE7jzSwi4vrbSFz25BC5SQsA1tZXOE7izSwC3urrSdkCtCVycBDRxQ1/rtXrIJXCRouf2GFDrIIE7t+jBzUKq/aEll8BFiprbWuGmLOUugTuzqMHdn6neBC5O1A3cCav3WznkErhI0XJ7DaxX67BM4CJFC24aWvFSRy6BixQlN62bspRxAndWUYJTpCxQ0aUwJHCRogO3VbspS9GlMPw74KZ3QAK8RLwMYG2toKWUTlTcVCkLVDJd1f8KuFsD5alqdUtUXeV+YIuudVUpC1TeNEPuHwIH30oX6/dIHVU3/hNviEXF7WdU1cME7lTdfzTitCkLVDQpDAlcpGi4dSPrbv0NcM1bLLF2wCWCU6csUFGkMFQFtzFUIgzgvVwiuNvYyhUpDFXBWaPa9OIqujxwASkLVBQpDFXBzSxwkW1+geAqPFVOYagKzo5ChMYxcrk4cEEpC1TkFIaq4GxftllEVXR54IJSFqg8SeSqgrPtH7OKqujSwJluJT+bNQX9YXAbpn6zianp4sAFpixQ6QrkKoLjdgaZSUxNFwcubqovZHJecFy/MOuYmi4MnPlVsX4phaEaOD5aG+XTvTRwwSkLVIQUhmrgPnhwMXVeFjjzUvkBQgpDNXBg1/IaVBpjUF0YuIiUBSoPXnKVwIGNeGYEHhMTzrgscDEpC1RG5wNXts7OIIGVhiYT7qR5SeCiUhYsORs4cL6DqV+9wue0tXU0B63eYjKZjHpacFln2uvvSszvGp6nYHCbq2w4PTxnMRsH2Om349m+0Hy2sR7lByenLIzk13j2kasCDmxQMDOUnKQLEdz23ldlOAi9lQtcZ/5rDUJIqw+XUsbg6j+2oNTNcqaZhFvX4O3M4z32K3i5KRTG+lv8ijeFoQo4MMZ2y0248FAk+7TnDxSX+MtbP0iR/Z/PQ+6rddwRyF/GLAXt2bmvWY9aQe+jF5w8x0814XFfCkMFcCBoZPZnjEG/qOQ3GH44oTnBTVdsEWOumYBl3TtB7Ev99HjmsjfuUcY8lLh9dauYKOj6UhgqgAO60ezHfR+CW/hKZs8+ajUWXPPVWcbUbEe8BG6PwelNnN64NIEpFJyvZpUW1OhTTwpDBXBg8+TBrwxjSObBU3AqOVCZH7XZ+nqfbcXJ4PYRM9666Xu6lXnPv+SrV05Z2NsdCgtmcQ5wbcDtuLVhBcm534pVQ+StKLiZNEQ/SQENuJrZcm/pjz6fljqeb8gpC9n+EYo1Q/Mc4EBCS/4KMFTg1kOaXc4UnH8teihBzCEVuJ2StclJWQPmeMKn5wvyqjFvO3nR5H6ZeHCfANzRo9qA4BzOuky1O52AU+UZLlERHTgm3CnvCDV3+++5P1akLBx1k8IvxsU788fEgkPWf/6/LayYDxHoThXA4FQp2cQeUoKzxrbiOC1zODXU/bGcspA/RLN5zrnnKhocsCGLzg6DBXzF78qBgJpzpSwE7XstOJK1mtVwOcY5kCtLd41y253WZ4oVgTOFIRoc8F0fdccV6a5bxjvBbP3aN0t33fV4TizltfvuvoD1b3hgNV2Asw6a42dwyXlNiq3ri16v/0pxdtzgFCkLhQZRbArJ1q6VSSQ4pHyLSRbVfGcVurURbOuzwW2WZR10wAcER0PBpnbfaO8KtOrWSABPxC6vm/fRdDMcNGZv9iK+MPDpr9pNgL2887VxisYeDt+cu89YRw6SchuV4suuFIZYcKA+0G9g1JYJEdCgrumOimHpjA4Q7WrqRZEhmTBhfhl1MhfSsGZZMOSQo9w8gdgMUib75Ay+OTUpCxloOvkMelcKQyy4L/D00qOMzD9DdWWDcnsDH7ricWSUYhOE+M9BvoAnrEPXhKVyQ2moxIeANcLYCU5OWYAbAxRxO0cKQyQ4ZPmXPbaJ7EoaIvhFGgyZXy5weIajXfQVf1oOcl88jiQFlK5FtBWUqjH4KDNxgNMklSI/xUj8uiOFIRIc6OrIkEC/jljaJK2acHWBQ25Dy4DOiPes6MDeQCox1QpNCg0BS4uhvvrpAicvzbDSVYDmHZaR4MDIQu+Kw6E4RDDxjh0HOGIuWAbP3PG5PwKO4yUnpzDq27bPDnahrktVyoE+rHcUqpV3G8WBg70G4cEmxgIV+kKf0dCHAxzSlIw7Bt+yULr//ODw4D9ZV8hlZw8F1OI8OIX7kXgTNMYM/6gocGC5Q5yEsC/j6R2/sRX3cYBDY4PLkUZGZ/lEIefkE32cK2DopTDv7Q6SIbZhHeBkhz89UkGR8cymMESBg92cEECqC/ky8OLb2rjKg8u+/ADoAY+FlSaAW3AvwzpNHGt3Fpwi8J9taRl5wc7uuYoC13JpStr+8KVQv7HCMA5wZBXDzCD4G0WXF8BtmFI6l2guPDjb50CFmbDkaZFLYYgCB23H9bQFZQoTY9EuAqRp7CAxDw7bC6zfHXXhYq4XwLUxuMPnIdc1sODMl9x0zLY0ObGKi47EgMM7lD36BIUIsF1vudB5cHjZy07kK7ZeARxRwQfcQdeAseDkUxaYRZkmDMSkUsSAEzfdsbXjD6ygDw8OLy/Y0DI2X04LWikh9sUG168MTrYzXrmxIwdemRSGGHAhd/cUhTKsnKwUKx4cmhJ4Y/s1CtzK/jzoFjAGnCJlgZ1GFXnf2R8B1w74gWXECadP2E2pAce+axw4rLgPxkllcPLI4Y9XU4xUO44ZAU5OAAHVF72JjDjLYaBRlUtaaC/Y6DnN9AK4JjZpDnGpEHBbG5xirqIOulNJeQsv9c9HgVPfaXAQNlbHmFIa44TNRMRK7zTCBXBIZ+VXA+A5zl7GQXliwMnWodP8kRvdSmEIBxd0ryD4OVg5vdFqeXCop/EJSPhxJ0QCONwhjotKPLofJ/ecfPcX89m0kTGqUm46Vw6GIk3FPggoGJwnSZN7p2Kljb1Mll7RLMC5TFPiSTtNFwI47Cg7+rux217KKrB+qOwBce4x1XhcaApDOLiw66rLsBaeXw3NKXS4vNasIgSCumIZ9vGDI67po8MDd4Gt0AzO3+kWbi2QF5ZPGKEzcDA4/X1L+QMWeUEyhdDAlcPJjE2P9ytLlvw48YPj/aaC+YSF/kzZy++ZY7gfJpQOBqe9QqR4wGliworCOlPDAQ4H8exIfxM/rPBd+MF12Yf9lt00pdCfKcfVfFarYrsBGa/B4LDLwSHoCbnflywiqQ3sAIftYNvFSTIbCpXjBYcPiyhMg0nIkCMNL0eyHWuBvLzsLZtWA4fd6p2syQh+xWLWpikneMJypS7gn0vXqh1cZWl2+sDhhagpZjPSSbredTFpeDllwesK1Rzqg/3ToeDg2t+pTXAE5+QzpxYt7tIucDiKSK3RT/xpOYo94Mjxq6CzY1+uufHZG+S3yLEZ4fQLOSI0rwQOpXG5lh+k6+YOZUtXIG3ZdoCjKUY/YBNRvV+OESe4jKS7wYv5SPKpYcdRu29v+lCkLEjnzVgBSktwDDYQHH68c5sQnghPj7CSck23X3RqFzjq0jZfhYrdkE4MbTNHQuxwYqU/g95n2X1m3UejLhvMP/Ndqfh7csqCey2gruKZbVWdfGg0JTWgTluZmjRsf9gRv5zM5/Pv5YsLHN1pZMxDfzoYNkY/LQagkTG4t12BYeNu8mQnoKMfYWV37F7w5XUymrVas/n3++/DjoWjbkXfkoeL6G9SDNpBPDi0cPU450hmwGmMcO5p3hKFLWF5xh37N5AbzbHpw3o63prCBT4sa5kBJ09QCg+2nNSMMrGCwGGvkGdDJfb8FiEC8cDaUwlogzR9279BGeTJVO5IpS4LxbnxNjjFPjcrR4ipdiHW0ooGhzZ1+Lx5xE1yQtzWMSCJfbpkEDxJ6PaA22s1RZDYBiefsqBIi9AcuAccgEHg/FsDoBDXb/HVhrxxn/kRGm8NUVeqUxeYNXYmX7Jhg5PdHhoHr2KbYz8SHA6GeHUyMvjAlDXWkSOXZ3tPtTo+gljuCnCmy7l2O/JZHgScImVBdX2m4uCTdiQ46PsQLCmScVr2yU1N9SPI/ClcqWas4a84oOYX3/Nuv4SiFjjZtS+tBfKK5BVBaaiFgMNLLf8GIRJIA664tmXGMz/BCpL0vCdIda2Am3gkVM2p6bNfQi/B4BRuSmXsWbHNsREFzrcVxxLsakfGRs+vjXZm94PdqoNH54ltZmmPHf+JxsY8+xT9yKsVKDg5ZUE60bwQ2XFWNGsIOBgbE4O2xLOGtEA2qbkpmO4br3t6Xa6QMb85N/6E26d/KlGbCL2u+eYqvvv/8qD3i/8ozjFWxFCOlcuu6lkEuAw9VXpGB78kzTGZ0RMM84Xu57cnyW32iQvt/1o6jlwf3z8yC/v930t5ubxDt1ixL/iwyKfr4r+KiyHabAzFnvhCgkMhIw7eGyybrg14L/DMnnebd8+f8NDQr6f3RUPqvbe9+qr0nDxc3/kKZOPF+9MX7OKr177+lN/hqP4A/SZfnx+zcqQWjS2nLDiEWZ4GhGP/26s2s87m0BumjUFTfXJ6czBu7XrOeKgqkTWHjWlr/4zxMPyE62xX+PCC40EbP+7U1BUuhrB3BAQkQPwzd6T+v4l+jDiF2aygGL+5zZvARUre0FUuhmBWCXa+qSXTBK6S5A1d6WIIZl1u5FL50XsJXJzk7VzpkjjOPJFXhfMEroocm7nixRCMeeI7E/koR1d/Ahcpx2aOuuOwFM48ka8CO6QhJHCRcmjkqjfJWMcJ1hx7yZAMErgKcmhkjQ/GK4w/W7HNce97TOAipaZKWZCEM09kH1orgYuXWk2TNy4KE3CX9gldHdK7E7hIqfmzpbTCZGUotjl+J3DRojIjZOG8J/KKoJPARUvtD10nyHlP5IrrJoGLFM3A0AhnnsjZR40ELlaUlxvKwpxPr8r3S+DiJOrqZU4480STYZvAxYkmZUElnHmi2OaYwEVKfMoCFc57Iq8I3uSJMAkn8u0qWuHMk99iqUECFycVUhaorLZdKoqwgzwokzDyPxSbytUlkHNWAAAAAElFTkSuQmCC" alt="the logo"></a> 
             <div class="nav-links" id="navlinks">
@@ -37,48 +36,84 @@
             </h1>
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
+        <div class="wrapper">
+            <div class="search-input">
+              <a href="" target="_blank" hidden></a>
+              <input type="text" placeholder="Search for job.....">
+              <div class="autocom-box">
+                <!-- here list are inserted from javascript -->
+              </div>
+              <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+           <div>
+             
+           </div>
+          </div>
+         
 
-        <div class="text-box">
-            <h1>Upload Resume</h1>
-            <p>File Types Can Be Uploaded for a Resume: csv, pdf, excel, word (doc, docx), txt, rtf, image, azw.</p>
-          </div>
-          <div class="upload_box">
-            <form action="#">
-              <input class="file-input" type="file" name="file" hidden>
-              <i class="fas fa-cloud-upload-alt"></i>
-              <p>Browse File to Upload</p>
-            </form>
-            <section class="progress-area"></section>
-            <section class="uploaded-area"></section>            
-            <a href ="#" class ="summarize_button"><span>Summarize</span></a>
-          </div>
-      
-    </section> 
-   
+
+           <!-- <div class = "cc">
+      <form>
+      <input type="text" name="text" id="txt"
+      required>
+      <button type="submit" class="btn-list">
+      <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+      </form>
+      <div class="container">
+        <ul>
+
+        </ul>
+      </div>
+    </div>  -->
     
-        
 
-          <script src="{% static 'js/upload.js' %}"></script> 
-          <script>
-            var navlinks =document.getElementById("navlinks");
-            function showmenu()
-            {
-                navlinks.style.right = "0";
-            }
-            function hidemenu()
-            {
-                navlinks.style.right = "-200px";
-            }
-        </script>
-        <script>
-          const summarize_button = document.querySelector('.summarize_button');
-          summarize_button.onmousemove = function(e)
-          {
-            const x = e.pageX - summarize_button.offsetLeft;
-            const y = e.pageY - summarize_button.offsetTop;
-            summarize_button.style.setProperty('--x' , x + 'px');
-            summarize_button.style.setProperty('--y' , y + 'px');
-          }
-        </script>
-    </body>
+  </section>
+    <script src="{% static 'js/suggestions.js'%}"></script>
+    <script src="{% static  'js/search_job.js'%}"></script>
+    <script>
+      var navlinks =document.getElementById("navlinks");
+      function showmenu()
+      {
+          navlinks.style.right = "0";
+      }
+      function hidemenu()
+      {
+          navlinks.style.right = "-200px";
+      }
+  </script>
+
+
+<!-- <script>
+
+    const inputText = document.querySelector('#txt');
+    const myButton = document.querySelector('.btn-list');
+    const list = document.querySelector('.container ul');
+    myButton.addEventlistener('click', (e)=>{
+    if(inputText. value != ""){
+    e.preventDefault();
+    // create Li
+    const myLi = document.createElement ('li');
+    myLi.innerHTML = inputText.value;
+    list.appendChild(myLi);
+    const mySpan = document.createElement('span');
+    mySpan.innerHTML = 'x';
+    myLi.appendChild(mySpan);
+    }
+    const close = document.querySelectorAll('span');
+for (let i=0; i<close.length; i++){
+close[i].addEventlistener('click', ()=>{
+close[i].parentElement.style.opacity = 0;
+setTimeout(()=>{
+  close[i].parentElement.style.opacity = "none";
+  close[i].parentElement.remove();
+
+},500)
+})
+}
+inputText.value = "";
+    });
+  </script> -->
+  
+  </body>
 </html>

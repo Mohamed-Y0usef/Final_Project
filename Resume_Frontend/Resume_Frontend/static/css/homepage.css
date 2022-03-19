@@ -1,5 +1,176 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.pexels.com/photos/5439470/pexels-photo-5439470.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    /* background-position: center; */
+    background-size: cover;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;   
+}
+nav img
+{
+    width: 70px;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: center; /* should be center because the signup and login will add*/
+}
+.nav-links ul li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    color :#fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
 
-img
+
+.signup-button {
+    width: 80px;
+    height: 40px;
+    margin-right: 7px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e9ecf0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.login-button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1859c9;
+    cursor: pointer
+}
+
+.login-button:hover {
+    background-color: #003ca3db;
+    transition: 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #b6b8bbd1;
+    transition: 0.3s;
+}
+.text-box
+{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1
+{
+    font-size: 45px;
+}
+.text-box p
+{
+    margin: 10px 0 40px;
+    font-size: 16px;
+}
+nav .fa
+{
+    display: none;
+}
+@media(max-width:700px)
+{
+    .text-box h1
+    {
+        font-size: 20px;
+    }
+    .nav-links ul li
+    {
+        display: block;
+
+    }
+    .nav-links
+    {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa
+    {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul
+    {
+        padding: 30px;
+
+    }
+} 
+.visit-button
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+}
+.visit-button:hover
+{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.7s;
+}
+
+
+/*img
 {
     opacity: 0.6;
     width: 1349px;
@@ -9,45 +180,58 @@ img
     background-attachment: fixed;
     background-size: cover;
     z-index: -1;
-   /* background: linear-gradient(127deg, rgba(172, 11, 11, 0), rgba(192, 23, 23, 0) 70%);*/
+   /* background: linear-gradient(127deg, rgba(172, 11, 11, 0), rgba(192, 23, 23, 0) 70%);
 }
 .text 
 {
+    color: white;
     position: relative;
-    bottom: 130px;
     text-align: center;
-    right: 250px;
+    left: 50px;
 }
 h2
 {
+    position: relative;
+    bottom: 500px;
     font-weight: bold;
+    /*
     margin-left: 500px;
     margin-top: 220px;
+    *//*
     font-size: 35px;
 }
 .p1 
 {
-    margin-left: 500px;
-    margin-top: 1px;
+    position: relative;
+    bottom: 500px;
+    /*margin-left: 500px;
+    margin-top: 1px;*//*
     font-size: 25px;
 }
 .p2
 {
+    position: relative; 
+    bottom: 500px;
+    /*
     margin-left: 500px;
-    margin-top: 1px;    
+    margin-top: 1px; */   /*
     font-size: 25px;
 }
  .p3
 {
-    margin-left: 200px;
+    color: white;
+    position: relative;
+    bottom: 270px;
+    /*margin-left: 200px;*//*
     font-size: 20px;
+    text-align: center;
 }
 
 .button-div {
     position:relative; 
-    left:1030px; 
-    bottom: -10px;
-    width: 350px;
+    left:1120px; 
+    bottom: 625px;
+    width: 200px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -87,7 +271,7 @@ h2
 .signup-button:hover {
     background-color: #b6b8bbd1
 }
-
+*/
 /*
  buttons 
 .buttons
@@ -137,5 +321,5 @@ h2
 .button1:hover {
     background-color: #e9ecf0d1
 }
-*/
+
 
