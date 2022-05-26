@@ -188,7 +188,6 @@ nav .fa
 .wrapper{
   max-width: 450px;
   margin: 70px 450px;
-
 }
 
 .wrapper .search-input{
@@ -198,10 +197,10 @@ nav .fa
   position: relative;
   box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
-.wrapper .search-input{
+/* .wrapper .search-input{
     width:35%;
     position :absolute;
-  }
+  } */
 
 .search-input input{
   height: 45px;
@@ -261,79 +260,135 @@ nav .fa
   cursor: pointer;
 }
 
-
-/* 
-form
+/* .jobdetails
 {
-    margin-top: 50px;
-    background: #fff;
-    box-shadow: -3px 6px 4px #222;
+    margin-left: 20px;
+    color: #fff;
 }
-form input
+.skills
 {
-    width: 250px;
-    height: 40px;
-    border: none;
-    outline: none;
-    padding: 0 5px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 800px;
 }
-
-form button{
-width: 50px;
-height: 40px;
-border: none;
-background: teal;
-color:white;
-outline: none;
-cursor: pointer;
-}
-
-
-.container{
-margin-top: 50px;
-}
-.container ul{
-list-style: none;
-width: 500px;
-}
-
-.container ul li{
-width: 100%;
-background: #fff;
-height: 40px;
-line-height: 40px;
-padding: 0 5px;
-position: relative;
-cursor: pointer;
-display: block;
-margin: 5px 0;
-box-shadow: -3px 6px 4px #222;
-transition: 0.5s linear;
-}
-.container ul li span{
-position: absolute;
-top:0;
-right: 0;
-width: 50px;
-text-align: center;
-background: D #e00;
-}
-
-.cc
+.skills h3
 {
-    position: absolute;
+    margin-left: 10px;
+}
+.skills span
+{
+    margin-left: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 8px;
+
+} */
+/* body
+{
+    background-color: rgb(97, 97, 97);
+}
+.jobdetails
+{
+    margin-left: 20px;
+    color: #fff;
+}
+.skills
+{
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 800px;
+}
+.skills h3
+{
+    margin-left: 10px;
+}
+.skills span
+{
+    margin-left: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 8px;
+
 } */
 
-.form2
-{
-    position: relative;
-    bottom: 300px;
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://kodhus.com/kodhus-ui/kodhus-0.1.0.min.css');
+body {
+  background: rgb(97, 2, 2);
+}
+.container {
+  width: 40%;
+  margin: 30px auto;
+}
+.tag-container {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 6px;
+}
+.tag-container .tag {
+  height: 28px;
+  margin: 5px;
+  padding: 5px 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  color: #333;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px #fff;
+  cursor: default;
+}
+.tag i {
+  font-size: 16px;
+  color: #666;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
-
-
-
-
-
-
-
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+/*===== VARIABLES CSS =====*/
+.skills{
+  position: relative;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  width: 50%;
+}
+.skillsinput{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  border: 1px solid #DADCE0;
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+.skillslabel{
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 .25rem;
+  color: #80868B;
+  font-size: 1rem;
+  transition: .3s;
+}
+/*Input focus move up label*/
+.skillsinput:focus + .skillslabel{
+  top: -.5rem;
+  left: .8rem;
+  color: #1A73E8;
+  background-color: #666;
+  font-size: .75rem;
+  font-weight: 500;
+  z-index: 10;
+}

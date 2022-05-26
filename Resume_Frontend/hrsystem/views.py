@@ -1,8 +1,8 @@
 from django.shortcuts import render
 # Create your views here.
 
-def upload(request):
-    return render(request , 'hr/upload.html')
+def hrupload(request):
+    return render(request , 'hr/hrupload.html')
 
-def searchjob(request):
-    return render(request , 'hr/searchjob.html') 
+def hrsearchjob(request):
+    return render(request , 'hr/hrsearchjob.html') 

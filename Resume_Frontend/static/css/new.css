@@ -188,7 +188,6 @@ nav .fa
 .wrapper{
   max-width: 450px;
   margin: 70px 450px;
-
 }
 
 .wrapper .search-input{
@@ -198,10 +197,10 @@ nav .fa
   position: relative;
   box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
-.wrapper .search-input{
+/* .wrapper .search-input{
     width:35%;
     position :absolute;
-  }
+  } */
 
 .search-input input{
   height: 45px;
@@ -261,6 +260,16 @@ nav .fa
   cursor: pointer;
 }
 
+.jobdetails
+{
+    margin-left: 20px;
+    color: #fff;
+}
+/* .skills
+{
+    border-radius: 4px;
+    width: 800px;
+} */
 
 /* 
 form
@@ -324,8 +333,51 @@ background: D #e00;
     position: absolute;
 } */
 
-.form2
+
+
+
+
+
+
+
+.summarize_button
+{
+    border-radius: 7px;
+    position: relative;
+    display: inline-flex;
+    padding: 10px 24px;
+    background: #363636;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+.summarize_button span
 {
     position: relative;
-    top: 80px;
+    z-index: 1;
+}
+.summarize_button::before
+{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50% , -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #2196f3;
+    transition: width 0.5s , height 0.5s;
+}
+.summarize_button:hover::before
+{
+    width: 300px;
+    height: 300px;
+}
+.summarize_button
+{
+    position: absolute;
+    bottom: 10%;
+    right: 14.5%;
 }
